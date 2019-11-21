@@ -1,0 +1,15 @@
+// 
+
+.sample {
+    // 変数を使用
+    color: $accent-color;
+    font-size: 40px;
+    display: flex;
+    // mixinを使用
+    @include media(pc) {
+      font-size: 20px;
+    }
+    @include media(tab) {
+      font-size: 16px;
+    }
+  }

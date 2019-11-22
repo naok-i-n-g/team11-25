@@ -1,11 +1,26 @@
-.s2{
+@mixin flexColumn(){
     display: flex;
     flex-direction: column;
-    > .s4{
-        font-size: 40px;
+}
+
+.s2{
+    @include flexColumn;
+    > .s-ityped{
+        font-size: 50px;
         color: lightgrey;
         font-style: italic;
     }
+}
+
+$s-h1: navy;
+$s-bgc: rgb(189, 202, 240);
+
+%s-extend{
+    margin-bottom: 50px;
+}
+
+%s-extend1{
+    width: 100%;
 }
 
 #s1{
@@ -13,24 +28,24 @@
     justify-content: center;
     align-items: center;
     height: 150px;
-    background-color: navy;
-    margin-bottom: 50px;
+    background-color: $s-h1;
+    @extend %s-extend;
 }
 
 .s3{
     margin: 0 auto;
-    width: 100%;
-    
-}
+    @extend %s-extend1;
+} 
 
 .s5{
+    height: auto;
     margin-bottom: 50px;
-    border: 3px dashed navy;
-    background-color:lightblue;
+    border: 7px dashed $s-h1;
+    background-color: $s-bgc;
     padding: 10px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px; 
+    @extend %s-extend;
     > p{
         line-height: 30px;
         font-size: 20px;
@@ -39,13 +54,13 @@
 
 
 #s2{
-    width: 100%;
+    @extend %s-extend1;
     display: flex;
     justify-content: space-around;
 }
 
 .s7{
-    width: 100%;
+    @extend %s-extend1;
     margin: 10px 0;
 }
 
@@ -53,13 +68,12 @@
     display: flex;
     justify-content: space-around;
     > table{
-        margin-bottom: 50px;
+        @extend %s-extend;
     }
 }
 
 .s10{
-    display: flex;
-    flex-direction: column;
+    @include flexColumn;
     align-items: center;  
     margin-bottom: 20px; 
     & p{
@@ -69,7 +83,7 @@
     > .s6{
         width: 200px;
         height: auto;
-        animation: 2s rotate ease;
+        animation: 2s rotate ease infinite;
     }
     > .s4{
         font-size: 30px;
@@ -100,8 +114,7 @@
 }
 
 #s13{
-    display: flex;
-    flex-direction: column;
+    @include flexColumn;
     width: 50%;
 }
 
@@ -126,4 +139,30 @@ caption{
 		-moz-user-select: none;
 		-webkit-user-select: none;
 		-ms-user-select: none;
+}
+
+.s-ityped-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.3s infinite;
+    -moz-animation: blink 0.3s infinite;
+    animation: blink 0.3s infinite;
+    animation-direction: alternate;
+}
+ 
+@keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+ 
+@-webkit-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+ 
+@-moz-keyframes blink {
+    100% {
+        opacity: 0;
+    }
 }

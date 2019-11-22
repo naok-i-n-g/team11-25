@@ -1,8 +1,14 @@
-let rotate = document.getElementById("s16");
-document.addEventListener("mouseover", function(){
-
-});
-
+// let subTitle = document.getElementsByClassName("s4");
+//     subTitle.addEventListener("mouseover", ();
+    
+// $(".s4").on("mouseover", function(){
+//     $(this).slideIn(slow);
+// });
+    
+ityped.init(document.querySelector("#s-ityped"), {
+    showCursor: false,
+    strings: ['3大フロントエンドフレームワーク', '(React・Angular・Vue.js)について']
+  })
 
 // var barChartData = {
 //     labels: ['2016', '2017', '2018'],

@@ -4,5 +4,21 @@
     main {
         width: 100%;
     }
+    .topic {
+        display: flex;
+        flex-direction: column;
+    }
+    .topic h1{
+        font-size: 40px;
+    }
+    .img-box {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+    }
+    .topic img {
+        width: 650px;
+    }
 
 }

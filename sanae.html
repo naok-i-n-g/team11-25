@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>React/Vue.js/Angular</title>
+    <link rel="stylesheet" href="assets/css/syule.css">
+
+</head>
+
+<body>
+    <div class="s3">
+        <header id="s1">
+            <div class="s2">
+                <h1 class="s4">3大フロントエンドフレームワーク</h1>
+                <h1 class="s4">(React・Angular・Vue.js)について</h1>
+            </div>
+        </header>
+
+        <section id="s2">
+            <div id="s13">
+                <section class="s5" id="s4">
+                    <div class="s10">
+                        <h1 class="s4">フロントエンドフレームワークとは</h1>
+                        <div class="s10">
+                            <p>フロントエンドフレームワークはJavaScriptのフレームワークなのですが、
+                                JavaScriptという言語は元々Webページにちょっとした動きを加える程度の言語でした。</p>
+                            <p>それがAjaxやjQuery、Thin Server Architectureやシングルページアプリケーションの登場を経て、
+                                フロントエンドを一手に担うWebアプリ開発にとってのキーマンとなる言語に成長したのです。</p>
+                </section>
+
+
+                <div style="width: 100%">
+                    <canvas id="s17"></canvas>
+                </div>
+                <button id="s18">Randomize Data</button>
+                <aside id="s3">
+                    <table id="s16">
+                        <caption>2016年</caption>
+                        <tr>
+                            <td>順位</td>
+                            <td>フレームワーク名</td>
+                            <td>STAR数</td>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Vue.js</td>
+                                    <td>26.4K</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>React</td>
+                                    <td>22.9K</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Angular</td>
+                                    <td>10.4K</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Angular1</td>
+                                    <td>8.5K</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Inferno</td>
+                                    <td>6.9K</td>
+                                </tr>
+                            </tbody>
+                        </tr>
+                    </table>
+                    <table>
+                        <caption>2017年</caption>
+                        <tr>
+                            <td>順位</td>
+                            <td>フレームワーク名</td>
+                            <td>STAR数</td>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Vue.js</td>
+                                    <td>40.0K</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>React</td>
+                                    <td>27.8K</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Angular</td>
+                                    <td>12.2K</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Preact</td>
+                                    <td>10.4K</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Hyperapp</td>
+                                    <td>8.1K</td>
+                                </tr>
+                            </tbody>
+                        </tr>
+                    </table>
+                    <table>
+                        <caption>2018年</caption>
+                        <tr>
+                            <td>順位</td>
+                            <td>フレームワーク名</td>
+                            <td>STAR数</td>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Vue.js</td>
+                                    <td>45.3K</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>React</td>
+                                    <td>34.2K</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Angular</td>
+                                    <td>12.4K</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Hyperapp</td>
+                                    <td>7.6K</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Omi</td>
+                                    <td>5.1K</td>
+                                </tr>
+                            </tbody>
+                        </tr>
+                    </table>
+                </aside>
+
+                <section class="s5" id="s5">
+                    <div class="s10">
+                        <h1 class="s4">Reactとは</h1>
+                        <img src="assets/img/react.jpg" alt="react" class="s6">
+                    </div>
+                    <p>ReactはFacebookが中心となって開発しているフレームワークです。</p>
+                    <p>そもそもReactはFacebook公式の見解ではフレームワークではなく、ライブラリであるとのことです。
+                        そういった考えもあってか、フロントエンドフレームワークが提供する機能である、
+                        ・コンポーネント化
+                        ・画面遷移などのルーティング
+                        ・Ajax関係のユーティリティ
+                        ・データバインディング
+                        のうち、単体ではデータバインディング機能しか提供していません。
+                        AjaxによるHTTP通信やルーティング、状態管理は他のライブラリと組み合わせて実現する必要があります。
+                        これはメリットであり、同時にデメリットでもあります。
+                        メリットとしては、自分が使いたいライブラリを自由に選んで組み合わせることができる点にあります。
+                        Ajax通信はあのライブラリを使って、ルーティングはあれを使って…と自由に選定することができます。
+                        デメリットとしてはこのメリットの裏返しで、各機能ごとに使用するライブラリを選定しないといけない点にあります。Webは周辺技術や必要な機能も多く、それら各々に関して技術選定を行うのは大変なこともあります
+                        また、別々のライブラリを同時に使用した場合の相性問題なども懸念のひとつになります。</p>
+                    <p>Reactの特徴としては以下のとおりです</p>
+                    <img src="assets/img/reactcode.jpg" alt="react code" class="s7">
+                    <p>ReactではJSXという記法を使います。まるでJavaScriptの中にHTMLを書いているかのようです</p>
+                    <p>各UIの各属性の値(状態)をJavaScript側の変数などのデータと紐づけます。(例えば、10行目のこの記法はフロントエンドエンジニアの中でも好みの差が出るところで、この記法が気持ち悪いからReactを使わないという人も知り合いにいます(笑)
+                        また、HTMLとJavaScriptが密接になっていることから、デザイナーとプログラマーの分業がやりづらいというデメリットもあるようです</p>
+                </section>
+
+                <section class="s5" id="s6">
+                    <div class="s10">
+                        <h1 class="s4">Angularとは</h1>
+                        <img src="assets/img/angular.jpg" alt="angular" class="s6">
+                    </div>
+                    <p>AngularはGoogleが開発しているフロントエンドフレームワークです。 Angularの特徴としては以下のとおりです。</p>
+                    <p>
+                        Angularはフルスタックフレームワークと言われます。
+                        これは、Webアプリケーションの構築に必要な要素（ルーティング、データバインディング、HTTP通信、状態管理、入力チェック、テンプレート、コンポーネント志向…etc）の大部分をAngularの導入ひとつで実現できるという意味です。
+                        この点こそが、ReactとAngularが決定的に異なる部分です。
+                        よってメリット・デメリットもReactと対照的になります。
+                        メリットとしては、Angularの導入でほぼすべてのフロントエンドにおいて必要な機能を揃えられるので、技術選定や各ライブラリの相性問題に悩まされることがない点があげられます。
+                        一方でデメリットは、一部の機能のみを他のライブラリで賄うということが難しく、柔軟性に欠けてしまうという点にあります。
+                        またAngularに限ったことでもないのですが、独自的な記法も多く、いわゆるAngular式のようなものを身につける必要があります。
+                    </p>
+                    <img src="assets/img/angularcode.jpg" alt="Angular code" class="s7">
+                </section>
+
+                <section class="s5" id="s7">
+                    <div class="s10">
+                        <h1 class="s4">Vue.jsとは</h1>
+                        <img src="assets/img/vue.jpg" alt="vue.js" class="s6">
+                    </div>
+                    <p>ReactとAngularのいいとこどりをしている</p>
+                    <p>Vue.jsはGoogleでAngularJSを使用した開発にも携わっていたEvan You氏によって開発されたフレームワークです。
+                        以下のような特徴があります。</p>
+                    <p>Vue.jsは今回紹介している3大フレームワークの中では一番後発のフレームワークです。
+                        Virtual DOMを取り入れた上で、双方向データバインディングも取り入れており、その上でHTTP通信やルーティングなどは別ライブラリと組み合わせて実現するという方式を採用しています。
+                        これによって両フレームワークのそれぞれのメリットを両方とも享受することができる贅沢なフレームワークとなっています。</p>
+                    <p>Vue.jsはHTML、JavaScript、CSSを全てひとつのファイルに書き、それをコンポーネントとして組み合わせることでアプリケーションを構築します。</p>
+                    <p>
+                        これによってHTML、JavaScript、CSSというコンポーネント単位での関心を1ファイルにまとめることができるので、システム全体として見通しがよくなります。
+                        ReactのJSXほどHTMLとJavaScriptが密接ではありませんが、Angularほど分離しているわけでもないというまさに中間地点的な立ち位置ですね。
+                        またReactのJSXやAngularのTypeScriptと異なり、純粋なJavaScriptで記述できます。</p>
+                    <img src="assets/img/vue.jscode.jpg" alt="vue.js code" class="s7">
+                    <p>日本語のドキュメントも完備されていますし、純粋なJavaScriptで記述できる点も相まって、学習コストも低く抑えることができます。
+                        この辺りが人気に火がついた理由でしょうか。</p>
+                    <p>実際に使ってみて感じるメリットやデメリットもあるでしょう。</p>
+                    <p>いざとなったらどれもちゃんと使えるレベルの習熟はしておきたいところですね。
+                        それでは今回はこのへんで。ここまで読んでいただきありがとうございました！</p>
+                </section>
+
+                <section class="s5" id="s8">
+                    <div class="s10">
+                        <h1 class="s4">おわりに</h1>
+                    </div>
+                    <p>今回はフロントエンドフレームワークの3大フレームワークについて解説しました。
+                        こう比較してみると、Vue.jsの人気に火がついたのもうなづけますね。
+                        ただReactはReact Nativeの存在もあったりと、Webアプリケーション分野の比較では計れないメリットもあったりするので、この比較が全てではないです。</p>
+                </section>
+        </section>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="assets/js/chart.js/samples/utils.js"></script>>
+    <script src="assets/js/sanae.js"></script>
+</body>
+
+</html>

@@ -9,6 +9,15 @@
     text-align: center;
     margin-top: 30px;
     margin-bottom:30px;
+    text-shadow:
+  0px 1px 0px #0092b3,
+  0px 2px 0px #0087a6,
+  0px 3px 0px #008099,
+  0px 4px 0px #00758c,
+  0px 5px 0px #555,
+  0px 6px 0px #006a80,
+  0px 0px 0px #006073,
+  0px 8px 7px #005566;
  }
  img {
      width: 100%;
@@ -23,7 +32,7 @@
     aside {
         width: 30%;
         height: 1500px;
-        background-color: rgb(165, 37, 37);
+        
 
     }
     h2 {
@@ -32,6 +41,16 @@
         margin-bottom: 30px;
         border-bottom: 3px solid red;
         padding: 4px;
+        text-shadow:
+  0px 1px 0px #0092b3,
+  0px 2px 0px #0087a6,
+  0px 3px 0px #008099,
+  0px 4px 0px #00758c,
+  0px 5px 0px #555,
+  0px 6px 0px #006a80,
+  0px 0px 0px #006073,
+  0px 8px 7px #005566;
+
     }
     .box1 {
         width: 90%;
@@ -49,6 +68,18 @@
             margin-top: 30px;
         
         }
+        a:hover{
+            font-size: 60px;
+            text-shadow:
+  0px 1px 0px #0092b3,
+  0px 2px 0px #0087a6,
+  0px 3px 0px #008099,
+  0px 4px 0px #00758c,
+  0px 5px 0px #555,
+  0px 6px 0px #006a80,
+  0px 0px 0px #006073,
+  0px 8px 7px #005566;
+        }
     }
 }
 @mixin hoge($bgcolor: #E5F1FF,$fsize: 30px,$border-bottom: 3px solid red,$margin-bottom: 30px,$padding:4px){
@@ -60,4 +91,54 @@
 }
 .title {
     @include hoge();
+    text-shadow:
+  0px 1px 0px #0092b3,
+  0px 2px 0px #0087a6,
+  0px 3px 0px #008099,
+  0px 4px 0px #00758c,
+  0px 5px 0px #555,
+  0px 6px 0px #006a80,
+  0px 0px 0px #006073,
+  0px 8px 7px #005566;
+}
+.anime{
+    display:  block;                /* ブロック要素にする */
+    margin: 0 auto;                 /* 要素中央揃え */
+    position:  relative;            /* 位置指定 */
+    animation: anime1 4s ease;      /* アニメーション指定 */
+}
+ 
+@keyframes anime1 {
+    0% {
+        opacity:  0;                /* 透明度指定 */
+        top: 50px;                  /* 位置指定 */
+    }
+    100% {
+        opacity:  1;                /* 透明度指定 */
+        top: 0;                     /* 位置指定 */
+    }
+}
+aside {
+    margin-top:20px;
+    display: flex;
+    flex-direction: column;
+    img{
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    }
+    p {
+    font-size: 30px;
+    margin-top: 20px;
+    text-shadow:
+  0px 1px 0px #0092b3,
+  0px 2px 0px #0087a6,
+  0px 3px 0px #008099,
+  0px 4px 0px #00758c,
+  0px 5px 0px #555,
+  0px 6px 0px #006a80,
+  0px 0px 0px #006073,
+  0px 8px 7px #005566;
+
+}
 }

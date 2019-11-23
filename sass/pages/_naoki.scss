@@ -1,0 +1,63 @@
+.naokmain {
+    width: 100%;
+}
+.python {
+
+ h1 {
+    font-size: 40px;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom:30px;
+ }
+ img {
+     width: 100%;
+ }
+}
+.container {
+    display: flex;
+    section {
+        width: 70%;
+        height: 1500px;
+     }
+    aside {
+        width: 30%;
+        height: 1500px;
+        background-color: rgb(165, 37, 37);
+
+    }
+    h2 {
+        font-size: 30px;
+        background-color:#E5F1FF;
+        margin-bottom: 30px;
+        border-bottom: 3px solid red;
+        padding: 4px;
+    }
+    .box1 {
+        width: 90%;
+        font-size: 20px;
+        padding: 10px;
+        letter-spacing: 10px;
+        a{
+            text-decoration: none; 
+            font-weight: bolder; 
+            color:tomato;
+            font-size: 30px; 
+            width: 100%;
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+        
+        }
+    }
+}
+@mixin hoge($bgcolor: #E5F1FF,$fsize: 30px,$border-bottom: 3px solid red,$margin-bottom: 30px,$padding:4px){
+    background-color: $bgcolor;
+    font-size: $fsize;
+    border-bottom: $border-bottom;
+    margin-bottom: $margin-bottom;
+    padding: $padding;
+}
+.title {
+    @include hoge();
+}

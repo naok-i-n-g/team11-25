@@ -238,8 +238,17 @@
     text-decoration: none;
     font-size: 30px;
   }
+
   
   /* メニューバーの動作ここまで */
   
 
+}
+// タイトルマウスdefault
+.header-hed {
+  cursor: default;
+}
+// マウスホーバーアクション
+.header-nav a:hover {
+  color: red;
 }

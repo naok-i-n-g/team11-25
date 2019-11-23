@@ -6,6 +6,7 @@
 //     $(this).slideIn(slow);
 // });
     
+// itypedJSライブラリー
 ityped.init(document.querySelector("#s-ityped"), {
     showCursor: false,
     strings: ['3大フロントエンドフレームワーク', '(React・Angular・Vue.js)について']
@@ -25,14 +26,22 @@ ityped.init(document.querySelector("#s-ityped"), {
 //     top.window.screenY = btn;
 //  };
 
+// jQuery Y座標以上で表示
+// let Y = $("#s10").offset();
+// $(function(){
+//   if(Y >= 750){
+//     $(this).css("display", "block");
+//   }
+// });
+
 // jQuery トップへ戻る
-$("#s10").on("click", function(){
-  let Y = $("#s10").offset();
-  if(Y>=750){
-    $(this).scrollTop();
+$("#s10").on("click", function () {
+  let Y = $("#s10").offset().top;
+  if (Y >= 750) {
+      $(this).css("display", "block");
+      $("html, body").animate({ scrollTop: 0 }, 300);
   }
 });
- 
 
 
 var barChartData = {

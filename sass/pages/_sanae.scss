@@ -7,7 +7,7 @@
     @include flexColumn;
     > .s-ityped{
         font-size: 50px;
-        color: lightgrey;
+        color: white;
         font-style: italic;
     }
 }
@@ -38,7 +38,7 @@ $s-bgc: rgb(189, 202, 240);
     justify-content: center;
     align-items: center;
     height: 150px;
-    background-color: $s-h1;
+    background-color: black;
 }
 
 .s3{
@@ -47,33 +47,35 @@ $s-bgc: rgb(189, 202, 240);
 }
 
 .s5{
+    width: 60%;    
     height: auto;
+    margin: 0 auto;
     margin-bottom: 50px;
     border: 7px dashed $s-h1;
     background-color: $s-bgc;
-    padding: 10px;
-    position: relative;
-    top: 0;
-    left: 0;
+    padding: 0px;
+    
     @extend %s-flexcol;
     @extend %s-extend;
     > p{
         line-height: 30px;
         font-size: 20px;
+        padding: 50px;
+        // opacity: 0;
+        // position: absolute;
+        // top: 0;
+        // left: 0;
     }
 }
 
 
 #s2{
-    @extend %s-extend1;
+    // @extend %s-extend1;
     @extend %s-spaceAround;
     @include flexColumn;
     margin: 0 auto;
-    width: 50%;
+    width: 100%;
     height: auto;
-    position: relative;
-    right: 0;
-    bottom:0;
 }
 
 .s7{
@@ -83,25 +85,33 @@ $s-bgc: rgb(189, 202, 240);
 
 #s3{
     @extend %s-spaceAround;
+    margin-bottom: 30px;
 }
 
 .s10{
     @include flexColumn;
     align-items: center;  
     margin-bottom: 20px; 
+    width: 100%; 
+    height: auto;
+    background-color: $s-bgc;
     & p{
         line-height: 30px;
         font-size: 20px;
+        width: 100%;
+        height: auto;
     }
     > .s6{
         width: 200px;
-        height: auto;
+        height: 200px;
         animation: 2s rotate ease infinite;
     }
     > .s4{
         font-size: 30px;
         font-weight: bold;
-        margin-bottom: 20px;
+        height: auto;
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -126,15 +136,6 @@ $s-bgc: rgb(189, 202, 240);
     width: 30%;
 }
 
-// #s13{
-//     @include flexColumn;
-//     width: 50%;
-//     height: auto;
-//     position: relative;
-//     right: 0;
-//     bottom:0;
-// }
-
 .s15{
     @extend %s-spaceAround;
 }
@@ -152,9 +153,9 @@ caption{
 }
 
 #s17{
-		-moz-user-select: none;
-		-webkit-user-select: none;
-		-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
 }
 
 .s-ityped-cursor {
@@ -215,20 +216,15 @@ caption{
     position: relative;
     top: 0;
     left: 0;
-    opacity: 1;
-    border: 1px solid black;
 }
 
 #q1{
     width: 100%;
     height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
     text-align: center;
-    opacity: 0;
-    border: 1px solid black;
-
 }
 
 .q1{
@@ -237,14 +233,15 @@ caption{
 
 .q2{
     opacity: 1;
+    
 }
 
 #s10{
     position: fixed;
     right: 50px;
     bottom: 50px;
-    
 }
+
 #s10 > p{
     font-size: 50px;
     cursor: pointer;
@@ -252,4 +249,55 @@ caption{
 
 #s11{
     @extend %s-extend;
+    margin-left: 100px;
+}
+
+#s12{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+#i3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 5px dashed navy;
+    background-color: rgb(189, 202, 240);
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#i1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+
+#i2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+
+#s4 > img{
+    width: 100%;
+    height: 750px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }

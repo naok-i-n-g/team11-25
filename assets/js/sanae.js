@@ -9,7 +9,7 @@
 // itypedJSライブラリー
 ityped.init(document.querySelector("#s-ityped"), {
     showCursor: false,
-    strings: ['3大フロントエンドフレームワーク', '(React・Angular・Vue.js)について']
+    strings: ['3大フロントエンドJSフレームワーク', '(React・Angular・Vue.js)について']
   })
 
   // let opacity = document.getElementById("q2");

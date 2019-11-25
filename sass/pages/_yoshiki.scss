@@ -1,3 +1,20 @@
-section {
-  height: 100px;
+.jumbotron {
+  background-image: url(../../assets/img/male-4494491_1920.jpg);
+  background-size: cover;
+  background-position: center 50%;
+}
+
+.jumbotron:nth-child(2) {
+  background: none;
+}
+
+.fa-code, .fa-html5 {
+  color: #e54d26;
+}
+
+.fa-bold {
+  color: #563d7c;
+}
+.fa-css3 {
+  color: #2163af;
 }

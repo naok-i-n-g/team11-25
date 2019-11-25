@@ -1,0 +1,303 @@
+@mixin flexColumn(){
+    display: flex;
+    flex-direction: column;
+}
+
+.s2{
+    @include flexColumn;
+    > .s-ityped{
+        font-size: 50px;
+        color: white;
+        font-style: italic;
+    }
+}
+
+$s-h1: navy;
+$s-bgc: rgb(189, 202, 240);
+
+%s-extend{
+    margin-bottom: 50px;
+}
+
+%s-extend1{
+    width: 100%;
+}
+
+%s-flexcol{
+    display: flex;
+    flex-direction: column;
+}
+
+%s-spaceAround{
+    display: flex;
+    justify-content: space-around;
+}
+
+#s1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: black;
+}
+
+.s3{
+    margin: 0 auto;
+    @extend %s-extend1;
+}
+
+.s5{
+    width: 60%;    
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border: 7px dashed $s-h1;
+    background-color: $s-bgc;
+    padding: 0px;
+    
+    @extend %s-flexcol;
+    @extend %s-extend;
+    > p{
+        line-height: 30px;
+        font-size: 20px;
+        padding: 50px;
+        // opacity: 0;
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+    }
+}
+
+
+#s2{
+    // @extend %s-extend1;
+    @extend %s-spaceAround;
+    @include flexColumn;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+.s7{
+    @extend %s-extend1;
+    margin: 10px 0;
+}
+
+#s3{
+    @extend %s-spaceAround;
+    margin-bottom: 30px;
+}
+
+.s10{
+    @include flexColumn;
+    align-items: center;  
+    margin-bottom: 20px; 
+    width: 100%; 
+    height: auto;
+    background-color: $s-bgc;
+    & p{
+        line-height: 30px;
+        font-size: 20px;
+        width: 100%;
+        height: auto;
+    }
+    > .s6{
+        width: 200px;
+        height: 200px;
+        animation: 2s rotate ease infinite;
+    }
+    > .s4{
+        font-size: 30px;
+        font-weight: bold;
+        height: auto;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+@keyframes rotate{
+    0%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotateY(90deg);
+    }
+    100%{
+        transform: rotateY(180deg);
+    }
+}
+
+
+#s12{
+    display: flex;
+    border: 1px solid black;
+    padding: 5px;
+    width: 30%;
+}
+
+.s15{
+    @extend %s-spaceAround;
+}
+
+table, td, tr{
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 20px;
+}
+
+caption{
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#s17{
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.s-ityped-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.3s infinite;
+    -moz-animation: blink 0.3s infinite;
+    animation: blink 0.3s infinite;
+    animation-direction: alternate;
+}
+ 
+@keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+ 
+@-webkit-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+ 
+@-moz-keyframes blink {
+    100% {
+        opacity: 0;
+    }
+}
+
+#s19{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+} 
+
+.s20{
+    margin-left: 15px;
+    font-size: 20px;
+    padding: 5px;
+    background-color: gold;
+    border-radius: 3px;
+}
+
+.s21{
+    @include flexColumn;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+#q3{
+    display: flex;
+    flex-direction: column;
+}
+
+#q2{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#q1{
+    width: 100%;
+    height: auto;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    text-align: center;
+}
+
+.q1{
+    opacity: 0;
+}
+
+.q2{
+    opacity: 1;
+    
+}
+
+#s10{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+
+#s10 > p{
+    font-size: 50px;
+    cursor: pointer;
+} 
+
+#s11{
+    @extend %s-extend;
+    margin-left: 100px;
+}
+
+#s12{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+#i3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 5px dashed navy;
+    background-color: rgb(189, 202, 240);
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#i1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+
+#i2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+}
+
+#s4 > img{
+    width: 100%;
+    height: 750px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

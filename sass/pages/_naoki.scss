@@ -201,13 +201,13 @@ top:0;
   margin:-10px;
  
 }
-body{
-  overflow:hidden;
-  background:#000;
- transform-style: preserve-3d;
+// body{
+//   overflow:hidden;
+//   background:#000;
+//  transform-style: preserve-3d;
  
-  @include perspective(1000px);
-}
+//   @include perspective(1000px);
+// }
 
 aside {
     margin-top:20px;
